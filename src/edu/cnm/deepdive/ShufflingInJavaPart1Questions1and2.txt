@@ -1,0 +1,9 @@
+Exercise 2:
+
+I.  A fair shuffle requires that we are guaranteed that any of the 52! possible shuffle combinations is a possibility in any given shuffle.  Randomness itself does not guarantee a fair shuffle.  Discussion about the Fisher-Yates shuffle brought out the fact that even though randomness is being used if the shuffling algorithm excludes the possibility of the current card being exchanged with itself then there is not a fair shuffle.  Also, if randomness is based on something, such as one of the milliseconds in the course of 24 hours,  that by it's nature is smaller than the number of shuffle combinations required for fairness then there is not a fair shuffle.
+
+II.  We're able to shuffle all N items in N-1 iterations because the algorithm guarantees that the largest item is shuffled first (which could involve it staying in place) then that largest item is not included in future possible exchanges, then the next item in the largest position number is exchanged with another position (including itself depending on the random roll).  So if the roll of the dice resulted in items 6-2 remaining in place obviously position 1 staying in place was always a possibility.  Otherwise, each roll clearly allows for all possible exchanges of the positons that remain.  The last roll occurs in which there are two items left: that last roll allows for each item to remain in place or for the two items to exchange places.  Those last two possibities of exchange are all the possibilites of exchange.  All possible combinations have been accounted for.
+
+III.  An item remaining in place is clearly a possibility in a shuffle.  If the possibility of an item remaining in place is eliminated then one of the possibilities of a fair shuffle has been eliminated.
+
+IV. There is no value in performing the Fisher-Yates shuffle multiple times in a row because because one shuffle guarantees a fair shuffle as explained above.
